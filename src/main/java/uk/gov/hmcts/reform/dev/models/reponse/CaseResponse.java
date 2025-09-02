@@ -8,9 +8,11 @@ import java.time.LocalDateTime;
 @Data
 @JsonInclude
 public class CaseResponse {
-    private String id;
+    private int id;
     private String title;
+    private String caseNumber;
     private String description;
     private String status;
+    private LocalDateTime createdDate;
     private LocalDateTime dueDate;
 }
